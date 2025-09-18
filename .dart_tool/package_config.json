@@ -1,0 +1,16 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "smart_ahwa_manager",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    }
+  ],
+  "generator": "pub",
+  "generatorVersion": "3.9.0",
+  "flutterRoot": "file:///Users/mosayyyed/Development/flutter",
+  "flutterVersion": "3.35.2",
+  "pubCache": "file:///Users/mosayyyed/.pub-cache"
+}

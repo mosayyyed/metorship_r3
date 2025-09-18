@@ -1,0 +1,14 @@
+{
+  "roots": [
+    "smart_ahwa_manager"
+  ],
+  "packages": [
+    {
+      "name": "smart_ahwa_manager",
+      "version": "0.2.0",
+      "dependencies": [],
+      "devDependencies": []
+    }
+  ],
+  "configVersion": 1
+}

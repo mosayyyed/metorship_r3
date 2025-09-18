@@ -1,0 +1,9 @@
+name: smart_ahwa_manager
+version: 0.2.0
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+description: Smart Ahwa Manager CLI demonstrating Clean Architecture & SOLID (entrypoint inside lib/).
+
+# Removed executables mapping because entrypoint now resides at lib/main.dart.
+
+
