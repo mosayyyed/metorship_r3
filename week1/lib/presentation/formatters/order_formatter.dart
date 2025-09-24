@@ -1,4 +1,4 @@
-import 'package:smart_ahwa_manager/domain/entities/order.dart';
+import '../../domain/entities/order.dart';
 
 // SRP: Handles only formatting of orders for display.
 class OrderFormatter {

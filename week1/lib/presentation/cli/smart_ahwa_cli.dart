@@ -1,8 +1,8 @@
-import 'package:smart_ahwa_manager/domain/entities/category.dart';
-import 'package:smart_ahwa_manager/domain/entities/drink.dart';
-import 'package:smart_ahwa_manager/domain/repositories/menu_repository.dart';
-import 'package:smart_ahwa_manager/domain/repositories/order_repository.dart';
-import 'package:smart_ahwa_manager/domain/usecases/generate_daily_report.dart';
+import '../../domain/entities/category.dart';
+import '../../domain/entities/drink.dart';
+import '../../domain/repositories/menu_repository.dart';
+import '../../domain/repositories/order_repository.dart';
+import '../../domain/usecases/generate_daily_report.dart';
 import '../io/io_port.dart';
 import '../io/console_io.dart';
 import '../controllers/order_controller.dart';

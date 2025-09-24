@@ -1,7 +1,7 @@
 import 'dart:math';
-import 'package:smart_ahwa_manager/domain/entities/order.dart';
-import 'package:smart_ahwa_manager/domain/repositories/menu_repository.dart';
-import 'package:smart_ahwa_manager/domain/repositories/order_repository.dart';
+import '../../domain/entities/order.dart';
+import '../../domain/repositories/menu_repository.dart';
+import '../../domain/repositories/order_repository.dart';
 import '../io/io_port.dart';
 import '../formatters/order_formatter.dart';
 

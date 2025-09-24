@@ -1,6 +1,6 @@
-import 'package:smart_ahwa_manager/domain/entities/category.dart';
-import 'package:smart_ahwa_manager/domain/entities/drink.dart';
-import 'package:smart_ahwa_manager/domain/repositories/menu_repository.dart';
+import '../../domain/entities/category.dart';
+import '../../domain/entities/drink.dart';
+import '../../domain/repositories/menu_repository.dart';
 import '../io/io_port.dart';
 import '../formatters/menu_formatter.dart';
 

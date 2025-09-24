@@ -1,4 +1,4 @@
-import 'package:smart_ahwa_manager/domain/entities/menu_item.dart';
+import '../../domain/entities/menu_item.dart';
 
 class MenuFormatter {
   static String list(List<MenuItem> items) {

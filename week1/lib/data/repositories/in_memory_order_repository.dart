@@ -1,5 +1,5 @@
-import 'package:smart_ahwa_manager/domain/repositories/order_repository.dart';
-import 'package:smart_ahwa_manager/domain/entities/order.dart';
+import '../../domain/repositories/order_repository.dart';
+import '../../domain/entities/order.dart';
 
 // In-memory order repository (Data Layer)
 class InMemoryOrderRepository implements OrderRepository {

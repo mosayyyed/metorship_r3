@@ -1,4 +1,4 @@
-import 'package:smart_ahwa_manager/domain/entities/report.dart';
+import '../../domain/entities/report.dart';
 
 class ReportFormatter {
   static String render(Report report) {

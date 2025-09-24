@@ -1,6 +1,6 @@
-import 'package:smart_ahwa_manager/domain/entities/menu_item.dart';
-import 'package:smart_ahwa_manager/domain/entities/category.dart';
-import 'package:smart_ahwa_manager/domain/repositories/menu_repository.dart';
+import '../../domain/entities/menu_item.dart';
+import '../../domain/entities/category.dart';
+import '../../domain/repositories/menu_repository.dart';
 
 // In-memory menu repository (Data Layer)
 // SRP: Handles storage concerns for menu items only.

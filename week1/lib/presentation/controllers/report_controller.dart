@@ -1,4 +1,4 @@
-import 'package:smart_ahwa_manager/domain/usecases/generate_daily_report.dart';
+import '../../domain/usecases/generate_daily_report.dart';
 import '../io/io_port.dart';
 import '../formatters/report_formatter.dart';
 
