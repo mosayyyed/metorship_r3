@@ -15,6 +15,10 @@ This is a mini UI-only application that implements the exact design provided whi
 - **Smooth Animations**: Enhanced navigation bar animations with haptic feedback
 - **Clean UI**: Modern design with gradients, shadows, and custom widgets
 
+## 📱 Demo
+
+https://github.com/user-attachments/assets/37f247d4-6158-46af-9c2f-a4893c906416
+
 ## 🏗️ Architecture Decisions
 
 ### Clean Architecture Structure
