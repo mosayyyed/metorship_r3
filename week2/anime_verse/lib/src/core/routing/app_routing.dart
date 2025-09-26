@@ -1,6 +1,6 @@
 import 'package:anime_verse/src/features/details/presentation/screens/details_screens.dart';
 import 'package:anime_verse/src/features/upgrade_plan/presentation/screens/upgrade_plan_screen.dart';
-import 'package:anime_verse/src/root_screen.dart';
+import 'package:anime_verse/src/features/layout/presentation/screens/root_screen.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRouter {

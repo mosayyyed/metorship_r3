@@ -17,10 +17,10 @@ class _RootScreenState extends State<RootScreen> with TickerProviderStateMixin {
 
   final List<Widget> _screens = [
     const HomeScreen(),
+    const LibraryScreen(),
     const SearchScreen(),
-    const ProfileScreen(),
-    const SearchScreen(),
-    const ProfileScreen(), // Library placeholder
+    const ExploreScreen(),
+    const SettingsScreen(),
   ];
 
   @override
@@ -70,13 +70,18 @@ class SearchScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.transparent,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.search, size: 80, color: AppTheme.secondaryColor),
+            SvgPicture.asset(
+              'assets/icons/search.svg',
+              width: 80,
+              height: 80,
+              color: AppTheme.secondaryColor,
+            ),
             SizedBox(height: 16),
             Text(
               'Search Screen',
@@ -98,21 +103,26 @@ class SearchScreen extends StatelessWidget {
   }
 }
 
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+class ExploreScreen extends StatelessWidget {
+  const ExploreScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.transparent,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.person, size: 80, color: AppTheme.secondaryColor),
+            SvgPicture.asset(
+              'assets/icons/explore.svg',
+              width: 80,
+              height: 80,
+              color: AppTheme.secondaryColor,
+            ),
             SizedBox(height: 16),
             Text(
-              'Profile Screen',
+              'Explore Screen',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -121,7 +131,83 @@ class ProfileScreen extends StatelessWidget {
             ),
             SizedBox(height: 8),
             Text(
-              'Manage your account settings',
+              'Discover new anime content',
+              style: TextStyle(fontSize: 16, color: AppTheme.secondaryColor),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class LibraryScreen extends StatelessWidget {
+  const LibraryScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SvgPicture.asset(
+              'assets/icons/lib.svg',
+              width: 80,
+              height: 80,
+              color: AppTheme.secondaryColor,
+            ),
+            SizedBox(height: 16),
+            Text(
+              'Library Screen',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: AppTheme.secondaryColor,
+              ),
+            ),
+            SizedBox(height: 8),
+            Text(
+              'Access your saved anime',
+              style: TextStyle(fontSize: 16, color: AppTheme.secondaryColor),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class SettingsScreen extends StatelessWidget {
+  const SettingsScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SvgPicture.asset(
+              'assets/icons/setting.svg',
+              width: 80,
+              height: 80,
+              color: AppTheme.secondaryColor,
+            ),
+            SizedBox(height: 16),
+            Text(
+              'Settings Screen',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: AppTheme.secondaryColor,
+              ),
+            ),
+            SizedBox(height: 8),
+            Text(
+              'Manage your preferences',
               style: TextStyle(fontSize: 16, color: AppTheme.secondaryColor),
             ),
           ],
