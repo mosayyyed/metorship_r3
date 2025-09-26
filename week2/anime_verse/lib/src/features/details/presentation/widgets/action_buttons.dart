@@ -1,7 +1,9 @@
+import 'package:anime_verse/src/core/routing/app_routing.dart';
 import 'package:anime_verse/src/core/theming/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 
 class ActionButtons extends StatelessWidget {
   const ActionButtons({super.key});
@@ -42,7 +44,9 @@ class ActionButtons extends StatelessWidget {
             SizedBox(width: 16.w),
             Expanded(
               child: ElevatedButton.icon(
-                onPressed: () {},
+                onPressed: () {
+                  GoRouter.of(context).push(AppRouter.upgradePlanScreen);
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppTheme.primaryColor,
                   padding: EdgeInsets.symmetric(vertical: 14.h),

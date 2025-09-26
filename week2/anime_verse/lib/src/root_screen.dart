@@ -1,9 +1,7 @@
 import 'package:anime_verse/src/core/widgets/custom_nav_bar.dart';
 import 'package:anime_verse/src/features/home/presentation/screens/home_screen.dart';
 import 'package:anime_verse/src/core/theming/app_theme.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -21,7 +19,7 @@ class _RootScreenState extends State<RootScreen> with TickerProviderStateMixin {
     const HomeScreen(),
     const SearchScreen(),
     const ProfileScreen(),
-    const SearchScreen(), // Explore placeholder
+    const SearchScreen(),
     const ProfileScreen(), // Library placeholder
   ];
 
