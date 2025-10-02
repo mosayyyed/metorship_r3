@@ -110,11 +110,7 @@ class WidgetCatalogHome extends StatelessWidget {
                 leading: CircleAvatar(
                   radius: 24,
                   backgroundColor: Theme.of(context).colorScheme.primary,
-                  child: Icon(
-                    widget.icon,
-                    color: Colors.white,
-                    size: 24,
-                  ),
+                  child: Icon(widget.icon, color: Colors.white, size: 24),
                 ),
                 title: Text(
                   widget.title,
@@ -127,10 +123,7 @@ class WidgetCatalogHome extends StatelessWidget {
                   padding: const EdgeInsets.only(top: 4),
                   child: Text(
                     widget.description,
-                    style: TextStyle(
-                      fontSize: 14,
-                      color: Colors.grey[600],
-                    ),
+                    style: TextStyle(fontSize: 14, color: Colors.grey[600]),
                   ),
                 ),
                 trailing: const Icon(Icons.arrow_forward_ios, size: 16),
@@ -252,7 +245,9 @@ class _AutocompleteDemoState extends State<AutocompleteDemo> {
               children: options.map((fruit) {
                 return Chip(
                   label: Text(fruit),
-                  backgroundColor: Theme.of(context).colorScheme.primaryContainer,
+                  backgroundColor: Theme.of(
+                    context,
+                  ).colorScheme.primaryContainer,
                 );
               }).toList(),
             ),
@@ -287,8 +282,6 @@ class _AutocompleteDemoState extends State<AutocompleteDemo> {
     );
   }
 }
-
-
 
 class AbsorbPointerDemo extends StatefulWidget {
   const AbsorbPointerDemo({super.key});
@@ -325,7 +318,10 @@ class _AbsorbPointerDemoState extends State<AbsorbPointerDemo> {
                         const SizedBox(height: 8),
                         Text(
                           'Taps: $tapCount',
-                          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          style: const TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ],
                     ),
@@ -353,7 +349,7 @@ class _AbsorbPointerDemoState extends State<AbsorbPointerDemo> {
             ),
             const SizedBox(height: 20),
             Text(
-              isAbsorbing 
+              isAbsorbing
                   ? '🚫 Try tapping any button - they are all blocked!'
                   : '✅ Try tapping the buttons - they should work normally',
               style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
@@ -556,11 +552,16 @@ class _AbsorbPointerDemoState extends State<AbsorbPointerDemo> {
                 });
               },
               icon: Icon(isAbsorbing ? Icons.lock_open : Icons.lock),
-              label: Text(isAbsorbing ? 'Disable Protection' : 'Enable Protection'),
+              label: Text(
+                isAbsorbing ? 'Disable Protection' : 'Enable Protection',
+              ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: isAbsorbing ? Colors.green : Colors.red,
                 foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 12,
+                ),
               ),
             ),
             const SizedBox(height: 16),
@@ -647,11 +648,11 @@ class _SemanticsDemoState extends State<SemanticsDemo> {
                 margin: const EdgeInsets.symmetric(vertical: 8),
                 child: ElevatedButton.icon(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: selectedOption == 'Technology' 
-                        ? Colors.blue 
+                    backgroundColor: selectedOption == 'Technology'
+                        ? Colors.blue
                         : Colors.blue[100],
-                    foregroundColor: selectedOption == 'Technology' 
-                        ? Colors.white 
+                    foregroundColor: selectedOption == 'Technology'
+                        ? Colors.white
                         : Colors.blue[800],
                     padding: const EdgeInsets.all(16),
                   ),
@@ -676,11 +677,11 @@ class _SemanticsDemoState extends State<SemanticsDemo> {
                 margin: const EdgeInsets.symmetric(vertical: 8),
                 child: ElevatedButton.icon(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: selectedOption == 'Sports' 
-                        ? Colors.green 
+                    backgroundColor: selectedOption == 'Sports'
+                        ? Colors.green
                         : Colors.green[100],
-                    foregroundColor: selectedOption == 'Sports' 
-                        ? Colors.white 
+                    foregroundColor: selectedOption == 'Sports'
+                        ? Colors.white
                         : Colors.green[800],
                     padding: const EdgeInsets.all(16),
                   ),
@@ -690,10 +691,7 @@ class _SemanticsDemoState extends State<SemanticsDemo> {
                     });
                   },
                   icon: const Icon(Icons.sports_soccer, size: 24),
-                  label: const Text(
-                    'Sports ⚽',
-                    style: TextStyle(fontSize: 16),
-                  ),
+                  label: const Text('Sports ⚽', style: TextStyle(fontSize: 16)),
                 ),
               ),
             ),
@@ -705,11 +703,11 @@ class _SemanticsDemoState extends State<SemanticsDemo> {
                 margin: const EdgeInsets.symmetric(vertical: 8),
                 child: ElevatedButton.icon(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: selectedOption == 'Music' 
-                        ? Colors.purple 
+                    backgroundColor: selectedOption == 'Music'
+                        ? Colors.purple
                         : Colors.purple[100],
-                    foregroundColor: selectedOption == 'Music' 
-                        ? Colors.white 
+                    foregroundColor: selectedOption == 'Music'
+                        ? Colors.white
                         : Colors.purple[800],
                     padding: const EdgeInsets.all(16),
                   ),
@@ -719,10 +717,7 @@ class _SemanticsDemoState extends State<SemanticsDemo> {
                     });
                   },
                   icon: const Icon(Icons.music_note, size: 24),
-                  label: const Text(
-                    'Music 🎵',
-                    style: TextStyle(fontSize: 16),
-                  ),
+                  label: const Text('Music 🎵', style: TextStyle(fontSize: 16)),
                 ),
               ),
             ),
@@ -737,7 +732,11 @@ class _SemanticsDemoState extends State<SemanticsDemo> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        const Icon(Icons.check_circle, color: Colors.green, size: 30),
+                        const Icon(
+                          Icons.check_circle,
+                          color: Colors.green,
+                          size: 30,
+                        ),
                         const SizedBox(width: 12),
                         Text(
                           'Selected: $selectedOption',
@@ -781,8 +780,6 @@ class _SemanticsDemoState extends State<SemanticsDemo> {
     );
   }
 }
-
-
 
 class InteractiveViewerDemo extends StatelessWidget {
   const InteractiveViewerDemo({super.key});
@@ -838,26 +835,22 @@ class InteractiveViewerDemo extends StatelessWidget {
                   child: Stack(
                     children: [
                       // Grid background
-                      ...List.generate(20, (i) => 
-                        Positioned(
+                      ...List.generate(
+                        20,
+                        (i) => Positioned(
                           left: i * 100.0,
                           top: 0,
                           bottom: 0,
-                          child: Container(
-                            width: 1,
-                            color: Colors.grey[300],
-                          ),
+                          child: Container(width: 1, color: Colors.grey[300]),
                         ),
                       ),
-                      ...List.generate(20, (i) => 
-                        Positioned(
+                      ...List.generate(
+                        20,
+                        (i) => Positioned(
                           top: i * 100.0,
                           left: 0,
                           right: 0,
-                          child: Container(
-                            height: 1,
-                            color: Colors.grey[300],
-                          ),
+                          child: Container(height: 1, color: Colors.grey[300]),
                         ),
                       ),
                       // Content
@@ -878,7 +871,10 @@ class InteractiveViewerDemo extends StatelessWidget {
                             SizedBox(height: 15),
                             Text(
                               'Pinch to zoom in and out',
-                              style: TextStyle(fontSize: 18, color: Colors.purple),
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.purple,
+                              ),
                             ),
                             SizedBox(height: 40),
                             Row(
@@ -886,20 +882,41 @@ class InteractiveViewerDemo extends StatelessWidget {
                               children: [
                                 Column(
                                   children: [
-                                    Icon(Icons.star, size: 40, color: Colors.orange),
-                                    Text('⭐ Item 1', style: TextStyle(fontSize: 16)),
+                                    Icon(
+                                      Icons.star,
+                                      size: 40,
+                                      color: Colors.orange,
+                                    ),
+                                    Text(
+                                      '⭐ Item 1',
+                                      style: TextStyle(fontSize: 16),
+                                    ),
                                   ],
                                 ),
                                 Column(
                                   children: [
-                                    Icon(Icons.favorite, size: 40, color: Colors.red),
-                                    Text('❤️ Item 2', style: TextStyle(fontSize: 16)),
+                                    Icon(
+                                      Icons.favorite,
+                                      size: 40,
+                                      color: Colors.red,
+                                    ),
+                                    Text(
+                                      '❤️ Item 2',
+                                      style: TextStyle(fontSize: 16),
+                                    ),
                                   ],
                                 ),
                                 Column(
                                   children: [
-                                    Icon(Icons.diamond, size: 40, color: Colors.cyan),
-                                    Text('💎 Item 3', style: TextStyle(fontSize: 16)),
+                                    Icon(
+                                      Icons.diamond,
+                                      size: 40,
+                                      color: Colors.cyan,
+                                    ),
+                                    Text(
+                                      '💎 Item 3',
+                                      style: TextStyle(fontSize: 16),
+                                    ),
                                   ],
                                 ),
                               ],
@@ -1036,11 +1053,7 @@ class _CustomPaintDemoState extends State<CustomPaintDemo> {
               children: [
                 Column(
                   children: [
-                    Container(
-                      width: 20,
-                      height: 20,
-                      color: Colors.blue,
-                    ),
+                    Container(width: 20, height: 20, color: Colors.blue),
                     const SizedBox(height: 4),
                     const Text('Rectangle', style: TextStyle(fontSize: 12)),
                   ],
@@ -1061,11 +1074,7 @@ class _CustomPaintDemoState extends State<CustomPaintDemo> {
                 ),
                 Column(
                   children: [
-                    Container(
-                      width: 20,
-                      height: 3,
-                      color: Colors.green,
-                    ),
+                    Container(width: 20, height: 3, color: Colors.green),
                     const SizedBox(height: 4),
                     const Text('Line', style: TextStyle(fontSize: 12)),
                   ],
@@ -1130,7 +1139,7 @@ class SimplePainter extends CustomPainter {
         begin: Alignment.topLeft,
         end: Alignment.bottomRight,
       ).createShader(Rect.fromLTWH(0, 0, size.width, size.height));
-    
+
     canvas.drawRect(
       Rect.fromLTWH(20, 20, size.width - 40, size.height - 40),
       gradientPaint,
@@ -1154,19 +1163,15 @@ class SimplePainter extends CustomPainter {
     final circlePaint = Paint()
       ..color = Colors.red
       ..style = PaintingStyle.fill;
-    
-    canvas.drawCircle(
-      Offset(size.width / 2, size.height / 2),
-      35,
-      circlePaint,
-    );
+
+    canvas.drawCircle(Offset(size.width / 2, size.height / 2), 35, circlePaint);
 
     // White circle border
     final circleStroke = Paint()
       ..color = Colors.white
       ..strokeWidth = 3
       ..style = PaintingStyle.stroke;
-    
+
     canvas.drawCircle(
       Offset(size.width / 2, size.height / 2),
       35,
@@ -1179,7 +1184,7 @@ class SimplePainter extends CustomPainter {
       ..strokeWidth = 6
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
-    
+
     canvas.drawLine(
       Offset(30, 30),
       Offset(size.width - 30, size.height - 30),
@@ -1193,13 +1198,23 @@ class SimplePainter extends CustomPainter {
 
     // Top-right corner
     canvas.drawCircle(Offset(size.width - 40, 40), 15, cornerPaint);
-    
-    // Bottom-left corner  
+
+    // Bottom-left corner
     canvas.drawCircle(Offset(40, size.height - 40), 15, cornerPaint);
 
     // Draw some stars
-    _drawStar(canvas, Offset(size.width * 0.25, size.height * 0.25), 20, Colors.white);
-    _drawStar(canvas, Offset(size.width * 0.75, size.height * 0.75), 15, Colors.cyan);
+    _drawStar(
+      canvas,
+      Offset(size.width * 0.25, size.height * 0.25),
+      20,
+      Colors.white,
+    );
+    _drawStar(
+      canvas,
+      Offset(size.width * 0.75, size.height * 0.75),
+      15,
+      Colors.cyan,
+    );
   }
 
   void _drawStar(Canvas canvas, Offset center, double radius, Color color) {
@@ -1211,13 +1226,13 @@ class SimplePainter extends CustomPainter {
     const int points = 5;
     final double outerRadius = radius;
     final double innerRadius = radius * 0.4;
-    
+
     for (int i = 0; i < points * 2; i++) {
       final double angle = (i * math.pi / points) - (math.pi / 2);
       final double currentRadius = (i % 2 == 0) ? outerRadius : innerRadius;
       final double x = center.dx + currentRadius * math.cos(angle);
       final double y = center.dy + currentRadius * math.sin(angle);
-      
+
       if (i == 0) {
         path.moveTo(x, y);
       } else {
