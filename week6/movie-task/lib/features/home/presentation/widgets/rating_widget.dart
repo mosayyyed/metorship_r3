@@ -10,7 +10,7 @@ class RatingWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-  Icon(Icons.star, color: context.colorScheme.secondary, size: 18),
+        Icon(Icons.star, color: context.colorScheme.onSecondary, size: 18),
         const SizedBox(width: 4),
         Text(
           '${rating.toStringAsFixed(1)} / 10',

@@ -9,7 +9,6 @@ import 'package:movie_task/core/theme/cubit/theme_cubit.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize GetIt service locator (Hive, Dio, Repositories, etc.)
   await setupServiceLocator();
 
   runApp(const MovieTask());

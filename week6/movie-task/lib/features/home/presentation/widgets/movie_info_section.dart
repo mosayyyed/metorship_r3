@@ -25,12 +25,23 @@ class MovieInfoSection extends StatelessWidget {
         const SizedBox(height: 8),
 
         // Rating
-        RatingWidget(rating: movie.voteAverage),
+        Row(
+          children: [
+            RatingWidget(rating: movie.voteAverage),
+            const SizedBox(width: 12),
+            GenreChip(genre: movie.getGenreNames()),
+          ],
+        ),
 
         const SizedBox(height: 8),
 
-        // Genre
-        GenreChip(genre: movie.getGenreNames()),
+        // Overview (short snippet)
+        Text(
+          movie.overview,
+          style: Theme.of(context).textTheme.bodySmall,
+          maxLines: 3,
+          overflow: TextOverflow.ellipsis,
+        ),
       ],
     );
   }

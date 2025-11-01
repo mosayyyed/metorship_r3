@@ -17,24 +17,52 @@ class MovieListItem extends StatelessWidget {
         : null;
 
     return Card(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+      elevation: 6,
+      margin: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(14),
         child: Padding(
           padding: const EdgeInsets.all(12.0),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              MoviePoster(posterUrl: posterUrl, width: 80, height: 120),
+              Hero(
+                tag: 'poster_${movie.id}',
+                child: MoviePoster(
+                  posterUrl: posterUrl,
+                  width: 100,
+                  height: 150,
+                ),
+              ),
+
+              const SizedBox(width: 14),
+
+              // Info
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    MovieInfoSection(movie: movie),
+                    const SizedBox(height: 8),
+                  ],
+                ),
+              ),
 
               const SizedBox(width: 12),
-
-              Expanded(child: MovieInfoSection(movie: movie)),
-
-              Icon(
-                Icons.chevron_right,
-                color: Theme.of(context).iconTheme.color,
-                size: 24,
+              // chevron
+              Container(
+                decoration: BoxDecoration(
+                  color: Theme.of(context).colorScheme.surfaceVariant,
+                  shape: BoxShape.circle,
+                ),
+                padding: const EdgeInsets.all(6),
+                child: Icon(
+                  Icons.chevron_right,
+                  color: Theme.of(context).iconTheme.color,
+                  size: 20,
+                ),
               ),
             ],
           ),
