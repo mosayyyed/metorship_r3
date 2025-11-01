@@ -3,13 +3,11 @@
 A concise Flutter demo app that shows popular movies (list + details), supports light/dark themes, local caching (Hive), and infinite scroll pagination.
 
 ## Demo
-Below is a demo video placeholder showing the app in action. Replace the link or the `assets/demo.mp4` file with your own recording.
-
 <video controls width="720" height="400">
-  <source src="assets/demo.mp4" type="video/mp4">
+  <source src="https://github.com/user-attachments/assets/f05057ed-bab1-4b69-ad62-1323652a942b
+" type="video/mp4">
   <!-- Fallback: link to an external demo video -->
-  Your browser does not support the video tag. You can watch the demo here:
-  https://example.com/demo.mp4
+
 </video>
 
 If you prefer to host the demo on YouTube or another platform, replace the above with a link or GIF.
