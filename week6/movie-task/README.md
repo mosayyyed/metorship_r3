@@ -3,14 +3,8 @@
 A concise Flutter demo app that shows popular movies (list + details), supports light/dark themes, local caching (Hive), and infinite scroll pagination.
 
 ## Demo
-<video controls width="720" height="400">
-  <source src="https://github.com/user-attachments/assets/f05057ed-bab1-4b69-ad62-1323652a942b
-" type="video/mp4">
-  <!-- Fallback: link to an external demo video -->
 
-</video>
-
-If you prefer to host the demo on YouTube or another platform, replace the above with a link or GIF.
+https://github.com/user-attachments/assets/6ef50d4e-28af-4fd8-991e-9d57bab5f1da
 
 ## Key Features
 - Browse popular movies (TMDB)
